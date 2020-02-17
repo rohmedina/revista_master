@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: monospace;
+}
+
+.nav__title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.nav__item a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.news__body {
+  text-align: justify;
+}
+
+.newsletter h2 {
+  font-size: 1.5rem;
+}
+
+.group input, .group button {
+  font-size: 1rem;
+}
+
+.nav {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.nav__list li {
+  display: inline;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 75% 25%;
+}
+@media (max-width: 576px) {
+  .main {
+    grid-template-columns: 100%;
+  }
+}
+
+.main__news {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 1vw;
+  grid-row-gap: 2vw;
+}
+@media (max-width: 576px) {
+  .main__news {
+    grid-template-columns: none;
+  }
+}
+
+img {
+  width: 100%;
+}
+@media (max-width: 576px) {
+  img {
+    height: 10rem;
+    object-fit: cover;
+  }
+}
+
+.nav {
+  padding: 1vw;
+  border-bottom: 1px solid gray;
+}
+
+.nav__list {
+  text-align: right;
+}
+
+.nav__input {
+  border-radius: 1.875rem;
+}
+
+.nav__item {
+  display: inline;
+}
+
+@media (max-width: 576px) {
+  .desaparece a {
+    display: none;
+    background-color: red;
+  }
+}
+h2 {
+  margin-bottom: 0.6vw;
+}
+
+.main {
+  margin: 0 5vw;
+  margin-top: 0.6vw;
+}
+
+.news {
+  display: inline-block;
+  cursor: pointer;
+  margin: 1vw;
+}
+
+.aside {
+  margin-left: 5vw;
+  float: right;
+}
+@media (max-width: 576px) {
+  .aside {
+    display: none;
+  }
+}
+
+.aside__about {
+  border-bottom: 1px solid gray;
+}
+.aside__about p {
+  margin-bottom: 1vw;
+}
+
+.aside__tags {
+  border-bottom: 1px solid gray;
+  text-align: right;
+  padding-bottom: 0.6vw;
+}
+.aside__tags ul {
+  padding: 0;
+}
+.aside__tags ul li {
+  background-color: steelblue;
+  color: white;
+  display: inline;
+}
+.aside__tags h2 {
+  margin-top: 0.6vw;
+  text-align: left;
+}
+
+.aside__news * {
+  margin-top: 0.5vw;
+  margin-bottom: 0.5vw;
+}
+
+.newsletter {
+  background-color: #f2f4f5;
+  text-align: center;
+  margin-top: 5vw;
+  padding: 4vw;
+}
+
+.group input,
+.group button {
+  display: inline-block;
+  border-width: 0;
+}
+
+.group button {
+  background-color: coral;
+  color: white;
+}
+
+.footer {
+  padding: 1vw;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */

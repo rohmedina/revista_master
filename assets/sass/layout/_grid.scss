@@ -1,0 +1,38 @@
+.nav {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+
+
+.nav__list li{
+    display: inline;
+}
+.main {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    @media (max-width: 576px) {    
+        grid-template-columns: 100%;
+    }
+  }
+
+.main__news{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-column-gap: 1vw;
+    grid-row-gap: 2vw;
+    @media (max-width: 576px) {
+        grid-template-columns: none;
+    }
+    
+}
+
+
+img{
+    width: 100%;
+    @media (max-width: 576px) {
+        height: 10rem;
+        object-fit: cover;
+    }
+}
+

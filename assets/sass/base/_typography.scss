@@ -1,0 +1,25 @@
+body {
+    font-family: $monospace;
+}
+
+.nav__title {
+    font-size: $large;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.nav__item a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.news__body{
+    text-align: justify;
+}
+
+.newsletter h2 {
+    font-size: $large;
+    }
+
+.group input, .group button {
+    font-size: $medium;
+}
